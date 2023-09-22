@@ -1,15 +1,13 @@
-public class Track {
-
-
-    public void updateTyre() {
+public interface TransportService {
+   default void updateTyre() {
         System.out.println("Меняем покрышку");
     }
 
-    public void checkEngine() {
+   default void checkEngine() {
         System.out.println("Проверяем двигатель");
     }
 
-    public void checkTrailer() {
+     default void checkTrailer() {
         System.out.println("Проверяем прицеп");
     }
 }
