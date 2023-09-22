@@ -1,4 +1,4 @@
-public interface TransportService {
+public interface TransportServiceWithEngine {
    default void updateTyre() {
         System.out.println("Меняем покрышку");
     }
